@@ -6,8 +6,10 @@ public class SqrService {
         int numberOfSquares = 0;
 
         for (int i = 10; i <= 99; i++) {
-            if (i * i >= start & i * i <= finish) {
-                numberOfSquares++;
+            if (i * i >= start) {
+                if (i * i <= finish) {
+                    numberOfSquares++;
+                }
             }
         }
         return numberOfSquares;
